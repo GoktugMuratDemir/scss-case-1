@@ -29,37 +29,3 @@
 @mixin gap($index) {
     gap: map-get($spacing, $index);
 }
-
-@mixin font-size($index) {
-    font-size: map-get($font-sizes, $index);
-}
-
-@mixin font-family($index) {
-    font-family: map-get($font-family, $index);
-}
-
-@mixin font-weight($index) {
-    font-weight: map-get($font-weight, $index);
-}
-
-@mixin color($index) {
-    color: map-get($colors, $index);
-}
-
-@mixin bg-color($index) {
-    background-color: map-get($colors, $index);
-}
-
-@mixin border-color($index) {
-    border-color: map-get($colors, $index);
-}
-
-@mixin border-radius($index) {
-    border-radius: map-get($spacing, $index);
-}
-
-@mixin border($index) {
-    border: map-get($spacing, $index) solid;
-}
-
-
