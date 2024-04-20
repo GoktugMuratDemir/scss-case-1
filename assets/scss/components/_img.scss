@@ -1,5 +1,41 @@
 .img {
-    display: block;
-    max-width: 100%;
+    
     height: auto;
+    max-width: 100%;
+
+    &.-full {
+        @include width("full");
+    }
+
+    &.-icon {
+        @include width("md");
+        @include height("md");
+    }
+
+    &.-illustration {
+        @include width("full");
+        @include height("auto");
+    }
+
+    &.-cover {
+        object-fit: cover;
+    }
+
+    &.-contain {
+        object-fit: contain;
+    }
+
+    &.-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &.-left {
+        margin-right: auto;
+    }
+
+    &.-right {
+        margin-left: auto;
+    }
+
 }

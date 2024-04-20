@@ -1,135 +1,161 @@
 .text {
-    font-family: $font-primary;
-    color: map-get($colors, "black");
-    font-size: map-get($font-sizes, "md");
-    font-weight: map-get($font-weight, "regular");
+  font-family: $font-primary;
+  color: map-get($colors, "black");
+  font-size: map-get($font-sizes, "md");
+  font-weight: map-get($font-weight, "regular");
 
-    &.-secondary {
-        color: map-get($colors, "secondary");
+  &.-secondary {
+    color: map-get($colors, "secondary");
+  }
+
+  &.-danger {
+    color: map-get($colors, "danger");
+  }
+
+  &.-light {
+    color: map-get($colors, "light");
+  }
+
+  &.-dark {
+    color: map-get($colors, "dark");
+  }
+
+  &.-xxs {
+    font-size: map-get($font-sizes, "xxs");
+    line-height: map-get($line-heights, "none");
+  }
+
+  &.-xs {
+    font-size: map-get($font-sizes, "xs");
+    line-height: map-get($line-heights, "none");
+
+    @include breakpoint("mobile") {
+      font-size: map-get($font-sizes, "xxs");
     }
+  }
 
-    &.-danger {
-        color: map-get($colors, "danger");
+  &.-sm {
+    font-size: map-get($font-sizes, "sm");
+    line-height: map-get($line-heights, "none");
+
+    @include breakpoint("mobile") {
+      font-size: map-get($font-sizes, "xs");
     }
+  }
 
-    &.-light {
-        color: map-get($colors, "light");
+  &.-lg {
+    font-size: map-get($font-sizes, "lg");
+    line-height: map-get($line-heights, "none");
+
+    @include breakpoint("mobile") {
+      font-size: map-get($font-sizes, "md");
     }
+  }
 
-    &.-dark {
-        color: map-get($colors, "dark");
+  &.-xl {
+    font-size: map-get($font-sizes, "xl");
+    line-height: map-get($line-heights, "none");
+
+    @include breakpoint("mobile") {
+      font-size: map-get($font-sizes, "lg");
     }
+  }
 
-    &.-xxs {
-        font-size: map-get($font-sizes, "xxs");
-        line-height: map-get($line-heights, "none");
+  &.-xxl {
+    font-size: map-get($font-sizes, "xxl");
+    line-height: map-get($line-heights, "none");
+
+    @include breakpoint("mobile") {
+      font-size: map-get($font-sizes, "xl");
     }
+  }
 
-    &.-xs {
-        font-size: map-get($font-sizes, "xs");
-        line-height: map-get($line-heights, "none");
+  &.-xxxl {
+    font-size: map-get($font-sizes, "xxxl");
+    line-height: map-get($line-heights, "none");
+
+    @include breakpoint("mobile") {
+      font-size: map-get($font-sizes, "xxl");
     }
+  }
 
-    &.-sm {
-        font-size: map-get($font-sizes, "sm");
-        line-height: map-get($line-heights, "none");
-    }
+  &.-light-weight {
+    font-weight: map-get($font-weight, "light");
+  }
 
-    &.-lg {
-        font-size: map-get($font-sizes, "lg");
-        line-height: map-get($line-heights, "none");
-    }
+  &.-medium-weight {
+    font-weight: map-get($font-weight, "medium");
+  }
 
-    &.-xl {
-        font-size: map-get($font-sizes, "xl");
-        line-height: map-get($line-heights, "none");
-    }
+  &.-semibold {
+    font-weight: map-get($font-weight, "semibold");
+  }
 
-    &.-xxl {
-        font-size: map-get($font-sizes, "xxl");
-        line-height: map-get($line-heights, "none");
-    }
+  &.-bold {
+    font-weight: map-get($font-weight, "bold");
+  }
 
-    &.-xxxl {
-        font-size: map-get($font-sizes, "xxxl");
-        line-height: map-get($line-heights, "none");
-    }
+  &.-uppercase {
+    text-transform: uppercase;
+  }
 
-    &.-light-weight {
-        font-weight: map-get($font-weight, "light");
-    }
+  &.-lowercase {
+    text-transform: lowercase;
+  }
 
-    &.-medium-weight {
-        font-weight: map-get($font-weight, "medium");
-    }
+  &.-capitalize {
+    text-transform: capitalize;
+  }
 
-    &.-bold {
-        font-weight: map-get($font-weight, "bold");
-    }
+  &.-center {
+    text-align: center;
+  }
 
-    &.-uppercase {
-        text-transform: uppercase;
-    }
+  &.-right {
+    text-align: right;
+  }
 
-    &.-lowercase {
-        text-transform: lowercase;
-    }
+  &.-left {
+    text-align: left;
+  }
 
-    &.-capitalize {
-        text-transform: capitalize;
-    }
+  &.-justify {
+    text-align: justify;
+  }
 
-    &.-center {
-        text-align: center;
-    }
+  &.-italic {
+    font-style: italic;
+  }
 
-    &.-right {
-        text-align: right;
-    }
+  &.-line-through {
+    text-decoration: line-through;
+  }
 
-    &.-left {
-        text-align: left;
-    }
+  &.-underline {
+    text-decoration: underline;
+  }
 
-    &.-justify {
-        text-align: justify;
-    }
+  &.-no-wrap {
+    white-space: nowrap;
+  }
 
-    &.-italic {
-        font-style: italic;
-    }
+  &.-break-word {
+    word-wrap: break-word;
+  }
 
-    &.-line-through {
-        text-decoration: line-through;
-    }
+  &.-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-    &.-underline {
-        text-decoration: underline;
-    }
+  &.-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-    &.-no-wrap {
-        white-space: nowrap;
-    }
-
-    &.-break-word {
-        word-wrap: break-word;
-    }
-
-    &.-ellipsis {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    &.-truncate {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    &.-hide {
-        display: none;
-    }
-
-
+  &.-hide {
+    display: none;
+  }
 }

@@ -4,9 +4,15 @@
   @include gap("xs");
   @include shape("sm");
   @include p("all", "sm");
-  font-size: map-get($font-sizes, "md");
+  font-size: map-get($font-sizes, "sm");
   font-weight: map-get($font-weight, "bold");
+  font-family: $font-primary;
   cursor: pointer;
+
+  @include breakpoint("mobile") {
+    font-size: map-get($font-sizes, "xs");
+    @include p("all", "xs");
+  }
 
   &.-outlined {
     border: 1px solid;

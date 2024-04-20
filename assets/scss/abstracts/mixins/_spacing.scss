@@ -7,6 +7,12 @@
         padding-right: map-get($sizes, $index);
     } @else if $direction == 'l' {
         padding-left: map-get($sizes, $index);
+    } @else if $direction == 'x' {
+        padding-left: map-get($sizes, $index);
+        padding-right: map-get($sizes, $index);
+    } @else if $direction == 'y' {
+        padding-top: map-get($sizes, $index);
+        padding-bottom: map-get($sizes, $index);
     } @else {
         padding: map-get($sizes, $index);
     }
@@ -21,6 +27,12 @@
         margin-right: map-get($sizes, $index);
     } @else if $direction == 'l' {
         margin-left: map-get($sizes, $index);
+    } @else if $direction == 'x' {
+        margin-left: map-get($sizes, $index);
+        margin-right: map-get($sizes, $index);
+    } @else if $direction == 'y' {
+        margin-top: map-get($sizes, $index);
+        margin-bottom: map-get($sizes, $index);
     } @else {
         margin: map-get($sizes, $index);
     }
