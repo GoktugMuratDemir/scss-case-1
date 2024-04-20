@@ -1,0 +1,65 @@
+@mixin p($direction, $index) {
+    @if $direction == 't' {
+        padding-top: map-get($spacing, $index);
+    } @else if $direction == 'b' {
+        padding-bottom: map-get($spacing, $index);
+    } @else if $direction == 'r' {
+        padding-right: map-get($spacing, $index);
+    } @else if $direction == 'l' {
+        padding-left: map-get($spacing, $index);
+    } @else {
+        padding: map-get($spacing, $index);
+    }
+}
+
+@mixin m($direction, $index) {
+    @if $direction == 't' {
+        margin-top: map-get($spacing, $index);
+    } @else if $direction == 'b' {
+        margin-bottom: map-get($spacing, $index);
+    } @else if $direction == 'r' {
+        margin-right: map-get($spacing, $index);
+    } @else if $direction == 'l' {
+        margin-left: map-get($spacing, $index);
+    } @else {
+        margin: map-get($spacing, $index);
+    }
+}
+
+@mixin gap($index) {
+    gap: map-get($spacing, $index);
+}
+
+@mixin font-size($index) {
+    font-size: map-get($font-sizes, $index);
+}
+
+@mixin font-family($index) {
+    font-family: map-get($font-family, $index);
+}
+
+@mixin font-weight($index) {
+    font-weight: map-get($font-weight, $index);
+}
+
+@mixin color($index) {
+    color: map-get($colors, $index);
+}
+
+@mixin bg-color($index) {
+    background-color: map-get($colors, $index);
+}
+
+@mixin border-color($index) {
+    border-color: map-get($colors, $index);
+}
+
+@mixin border-radius($index) {
+    border-radius: map-get($spacing, $index);
+}
+
+@mixin border($index) {
+    border: map-get($spacing, $index) solid;
+}
+
+
