@@ -1,0 +1,78 @@
+<!--
+  This HTML file represents a product page layout for a website.
+  It includes the necessary meta tags, CSS stylesheets, and JavaScript files.
+  The page displays a product image, product details, pricing information, and buttons for adding the product to the cart or wishlist.
+  The layout is responsive and uses the Poppins font from Google Fonts.
+  The file path of the associated CSS file is "style.css".
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Page title -->
+    <title>Scss Case 1 - Temp</title>
+  </head>
+  <body>
+    <!-- Product card -->
+    <div class="product-card">
+      <!-- Product image -->
+      <img
+        src="./assets/img/Frame-1.png"
+        class="product-card-content-row__img-content__item"
+        alt=""
+      />
+      <div class="product-card__detail">
+        <!-- Product details -->
+        <div>
+          <div class="label">TFree shipping</div>
+
+          <h2 class="title">Razer Kraken Kitty Edt Gaming Headset Quartz</h2>
+        </div>
+        <!-- Pricing information -->
+        <div class="product-card__info">
+          <p class="text-strikethrough text-lg">1.599 , -</p>
+          <p class="text -extrabold text-xxxl">799 , -</p>
+          <p class="text -grey -sm -light">
+            The offer is valid until April 3 or as long as stock lasts!
+          </p>
+        </div>
+        <!-- Add to cart button -->
+        <button class="btn -primary">Add to cart</button>
+        <!-- Stock availability -->
+        <p class="product-card__stock">50+ pcs. in stock.</p>
+        <!-- Actions - Buttons: Add to cart and Add to wishlist -->
+        <div class="product-card__actions">
+          <button class="btn -outlined">
+            <img
+              src="./assets/img/icons/ic_scale.svg"
+              class="img cover w-5 h-5"
+              alt=""
+            />
+            Add to cart
+          </button>
+
+          <button class="btn -outlined">
+            <img
+              src="./assets/img/icons/ic_heart.svg"
+              class="img cover w-5 h-5"
+              alt=""
+            />
+            <p>Add to wishlist</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
