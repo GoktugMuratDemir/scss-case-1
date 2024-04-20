@@ -1,8 +1,36 @@
 .product-card {
+  @include flex(row, nowrap, center, start);
+  @include bg("success");
+  @include gap("xxl");
+  @include bg("white");
+  @include shape("md");
+  @include p("all", "xxl");
+  @include width("1-2");
+
+  &__detail {
+    @include flex(column, nowrap, center, start);
+    @include gap("lg");
+  }
+
+  &__stock {
+    position: relative;
+
+    padding-left: 22px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      @include width("sm");
+      @include height("sm");
+      @include shape("1-2");
+      @include bg("success");
+    }
+  }
+
+  &__actions {
     @include flex(row, nowrap, center, start);
-    @include width("1-2");
-    @include gap("md");
-    @include bg("white");
-    @include shape("md");
-    @include p("all","xl");
+    @include gap("sm");
+    @include width("full");
+  }
 }

@@ -1,6 +1,6 @@
 .text {
     font-family: $font-primary;
-    color: map-get($colors, "primary");
+    color: map-get($colors, "black");
     font-size: map-get($font-sizes, "md");
     font-weight: map-get($font-weight, "regular");
 
@@ -22,30 +22,37 @@
 
     &.-xxs {
         font-size: map-get($font-sizes, "xxs");
+        line-height: map-get($line-heights, "none");
     }
 
     &.-xs {
         font-size: map-get($font-sizes, "xs");
+        line-height: map-get($line-heights, "none");
     }
 
     &.-sm {
         font-size: map-get($font-sizes, "sm");
+        line-height: map-get($line-heights, "none");
     }
 
     &.-lg {
         font-size: map-get($font-sizes, "lg");
+        line-height: map-get($line-heights, "none");
     }
 
     &.-xl {
         font-size: map-get($font-sizes, "xl");
+        line-height: map-get($line-heights, "none");
     }
 
     &.-xxl {
         font-size: map-get($font-sizes, "xxl");
+        line-height: map-get($line-heights, "none");
     }
 
     &.-xxxl {
         font-size: map-get($font-sizes, "xxxl");
+        line-height: map-get($line-heights, "none");
     }
 
     &.-light-weight {
@@ -59,4 +66,70 @@
     &.-bold {
         font-weight: map-get($font-weight, "bold");
     }
+
+    &.-uppercase {
+        text-transform: uppercase;
+    }
+
+    &.-lowercase {
+        text-transform: lowercase;
+    }
+
+    &.-capitalize {
+        text-transform: capitalize;
+    }
+
+    &.-center {
+        text-align: center;
+    }
+
+    &.-right {
+        text-align: right;
+    }
+
+    &.-left {
+        text-align: left;
+    }
+
+    &.-justify {
+        text-align: justify;
+    }
+
+    &.-italic {
+        font-style: italic;
+    }
+
+    &.-line-through {
+        text-decoration: line-through;
+    }
+
+    &.-underline {
+        text-decoration: underline;
+    }
+
+    &.-no-wrap {
+        white-space: nowrap;
+    }
+
+    &.-break-word {
+        word-wrap: break-word;
+    }
+
+    &.-ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &.-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &.-hide {
+        display: none;
+    }
+
+
 }
