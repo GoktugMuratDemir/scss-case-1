@@ -1,0 +1,8 @@
+.product-card {
+    @include flex(row, nowrap, center, start);
+    @include width("1-2");
+    @include gap("md");
+    @include bg("white");
+    @include shape("md");
+    @include p("all","xl");
+}

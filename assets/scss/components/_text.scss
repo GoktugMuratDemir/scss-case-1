@@ -1,0 +1,62 @@
+.text {
+    font-family: $font-primary;
+    color: map-get($colors, "primary");
+    font-size: map-get($font-sizes, "md");
+    font-weight: map-get($font-weight, "regular");
+
+    &.-secondary {
+        color: map-get($colors, "secondary");
+    }
+
+    &.-danger {
+        color: map-get($colors, "danger");
+    }
+
+    &.-light {
+        color: map-get($colors, "light");
+    }
+
+    &.-dark {
+        color: map-get($colors, "dark");
+    }
+
+    &.-xxs {
+        font-size: map-get($font-sizes, "xxs");
+    }
+
+    &.-xs {
+        font-size: map-get($font-sizes, "xs");
+    }
+
+    &.-sm {
+        font-size: map-get($font-sizes, "sm");
+    }
+
+    &.-lg {
+        font-size: map-get($font-sizes, "lg");
+    }
+
+    &.-xl {
+        font-size: map-get($font-sizes, "xl");
+    }
+
+    &.-xxl {
+        font-size: map-get($font-sizes, "xxl");
+    }
+
+    &.-xxxl {
+        font-size: map-get($font-sizes, "xxxl");
+    }
+
+    &.-light-weight {
+        font-weight: map-get($font-weight, "light");
+    }
+
+    &.-medium-weight {
+        font-weight: map-get($font-weight, "medium");
+    }
+
+    &.-bold {
+        font-weight: map-get($font-weight, "bold");
+    }
+}

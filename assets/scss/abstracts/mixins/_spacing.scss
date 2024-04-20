@@ -1,31 +1,31 @@
 @mixin p($direction, $index) {
     @if $direction == 't' {
-        padding-top: map-get($spacing, $index);
+        padding-top: map-get($sizes, $index);
     } @else if $direction == 'b' {
-        padding-bottom: map-get($spacing, $index);
+        padding-bottom: map-get($sizes, $index);
     } @else if $direction == 'r' {
-        padding-right: map-get($spacing, $index);
+        padding-right: map-get($sizes, $index);
     } @else if $direction == 'l' {
-        padding-left: map-get($spacing, $index);
+        padding-left: map-get($sizes, $index);
     } @else {
-        padding: map-get($spacing, $index);
+        padding: map-get($sizes, $index);
     }
 }
 
 @mixin m($direction, $index) {
     @if $direction == 't' {
-        margin-top: map-get($spacing, $index);
+        margin-top: map-get($sizes, $index);
     } @else if $direction == 'b' {
-        margin-bottom: map-get($spacing, $index);
+        margin-bottom: map-get($sizes, $index);
     } @else if $direction == 'r' {
-        margin-right: map-get($spacing, $index);
+        margin-right: map-get($sizes, $index);
     } @else if $direction == 'l' {
-        margin-left: map-get($spacing, $index);
+        margin-left: map-get($sizes, $index);
     } @else {
-        margin: map-get($spacing, $index);
+        margin: map-get($sizes, $index);
     }
 }
 
 @mixin gap($index) {
-    gap: map-get($spacing, $index);
+    gap: map-get($sizes, $index);
 }
