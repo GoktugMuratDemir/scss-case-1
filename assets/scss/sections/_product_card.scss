@@ -5,7 +5,7 @@
   @include bg("white");
   @include shape("md");
   @include p("all", "xxl");
-  @include width("2-3");
+  @include width("1-2");
 
   @include breakpoint("mobile") {
     @include flex(column, nowrap, start, start);
@@ -21,14 +21,23 @@
     }
   }
 
+  &__badge {
+    @include flex(column, nowrap, center, start);
+    @include gap("sm");
+
+    @include breakpoint("mobile") {
+      @include gap("xs");
+    }
+  }
+
   &__stock {
     position: relative;
 
     @include p("l", "sm");
 
     @include breakpoint("mobile") {
-        @include m("t","md");
-      }
+      @include m("t", "md");
+    }
 
     &:before {
       content: "";
@@ -48,10 +57,8 @@
     @include width("full");
 
     @include breakpoint("mobile") {
-        @include flex(column, nowrap, start, start);
-        @include gap("xs");
-      }
-
-
+      @include flex(column, nowrap, start, start);
+      @include gap("xs");
+    }
   }
 }

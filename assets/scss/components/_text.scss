@@ -63,7 +63,7 @@
 
   &.-xxl {
     font-size: map-get($font-sizes, "xxl");
-    line-height: map-get($line-heights, "none");
+    line-height: map-get($line-heights, "short");
 
     @include breakpoint("mobile") {
       font-size: map-get($font-sizes, "xl");
